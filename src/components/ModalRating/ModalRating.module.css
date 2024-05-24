@@ -1,0 +1,96 @@
+.header {
+    display: flex;
+    padding: 0px 5px 0px 16px;
+    border-bottom: 1px solid var(--Grey-200, #EAEBED);
+}
+
+.title {
+    color: var(--Black, #000);
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+}
+
+.close {
+    width: 16px;
+    height: 16px;
+    color: #ACADB9;
+}
+
+.body {
+    display: flex;
+    padding-top: 16px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    align-self: stretch;
+}
+
+.movieName {
+    color: var(--Black, #000);
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+}
+
+.symbolBody {
+    padding-right: 7.6px;
+}
+
+.buttonSave {
+    width: 73px;
+    height: 40px;
+    display: flex;
+    padding: 10px 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 8px;
+    background: var(--Purple-Main-500, #9854F6);
+
+    &:hover {
+        background-color: var(--Purple-400, #BD93F7);
+    }
+
+    &:active {
+        background-color: var(--Purple-600, #541F9D);
+    }
+
+    &:disabled {
+        background: var(--Purple-Main-500, #9854F6);
+        color: white;
+        cursor: not-allowed;
+    }
+}
+
+.buttonRemove {
+    color: var(--Purple-Main-500, #9854F6);
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+
+    &:hover {
+        color: var(--Purple-400, #BD93F7);
+    }
+
+    &:active {
+        color: var(--Purple-600, #541F9D);
+    }
+
+    &:disabled {
+        color: var(--Grey-600, #7B7C88);
+        background-color: transparent;
+        cursor: not-allowed;
+    }
+}

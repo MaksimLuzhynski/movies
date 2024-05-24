@@ -1,26 +1,41 @@
-import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import '@mantine/core/styles.css';
+import '@mantine/core/styles/global.css';
+import AllRoutes from './routes';
+import { MantineProvider, createTheme } from "@mantine/core";
+import { Provider } from 'react-redux';
+import { store } from './redux/store';
 
-function App() {
+const theme = createTheme({
+  fontFamily: 'Inter',
+
+  breakpoints: {
+    xs: '30em',//480
+    sm: '48em',//768
+    md: '64em',//1024
+    lg: '74em',//1184
+    xl: '90em',//1440
+  },
+
+  headings: {
+    sizes: {
+      h1: {
+        fontWeight: '700',
+        lineHeight: '140%',
+        fontSize: '32px'
+      },
+    },
+  },
+});
+
+
+export default function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <MantineProvider theme={theme} >
+      <Provider store={store}>
+        <AllRoutes />
+      </Provider>
+    </MantineProvider>
   );
 }
-
-export default App;

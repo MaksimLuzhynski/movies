@@ -1,0 +1,41 @@
+.button {
+    width: 232px;
+    height: 42px;
+    display: flex;
+    padding: 10px;
+    align-items: flex-start;
+    gap: 10px;
+    align-self: stretch;
+
+    color: var(--Black, #000);
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    cursor: pointer;
+
+    &:hover {
+        color: var(--Purple-400, #BD93F7);
+    }
+}
+
+.buttonActive {
+    width: 232px;
+    height: 42px;
+    display: flex;
+    padding: 10px;
+    align-items: flex-start;
+    gap: 10px;
+    align-self: stretch;
+    border-radius: 8px;
+    background: var(--Purple-200, #E5D5FA);
+
+    color: var(--Purple-Main-500, #9854F6);
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%;
+    cursor: pointer;
+}
