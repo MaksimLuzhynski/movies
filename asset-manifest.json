@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/movies/static/css/main.642c542c.css",
+    "main.js": "/movies/static/js/main.3ccbdbb2.js",
+    "static/media/No_rated_movies.png": "/movies/static/media/No_rated_movies.736e49a66fcb142a8542.png",
+    "static/media/No_movies.png": "/movies/static/media/No_movies.e840c012c7c67b8eff22.png",
+    "static/media/No_poster.svg": "/movies/static/media/No_poster.d2f48efd59c10d8a756223a9247b7f23.svg",
+    "static/media/Logo.svg": "/movies/static/media/Logo.078797e4c59629c73d75b664da8afe9e.svg",
+    "index.html": "/movies/index.html",
+    "main.642c542c.css.map": "/movies/static/css/main.642c542c.css.map",
+    "main.3ccbdbb2.js.map": "/movies/static/js/main.3ccbdbb2.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.642c542c.css",
+    "static/js/main.3ccbdbb2.js"
+  ]
+}
